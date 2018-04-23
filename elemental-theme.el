@@ -5,7 +5,7 @@
 ;; 自分の init.el で my-make-color して作っているような色たちをどうするか。
 
 (defface elemental-bright-bg-face
-  '((t (:background "#20282f")))
+  '((t (:background "#2a3138")))
   "Bright BG face for elemental-theme. This face is expected to
 be brighter than `default' but darker than
 `elemental-brighter-bg-face'. Used to highlight the current-line,
@@ -13,20 +13,20 @@ inactive modeline, etc."
   :group 'elemental-theme)
 
 (defface elemental-brighter-bg-face
-  '((t (:background "#31373e")))
+  '((t (:background "#3b4248")))
   "Brighter BG face for elemental-theme. This face is expected to
 be brighter than `elemental-bright-bg-face'. Used to highlight
 active modeline."
   :group 'elemental-theme)
 
 (defface elemental-highlight-bg-1-face
-  '((t (:background "#4b4f53")))
+  '((t (:background "#4c5258")))
   "Accent BG face for elemental-theme. Used to highlight matches,
 etc."
   :group 'elemental-theme)
 
 (defface elemental-highlight-bg-2-face
-  '((t (:background "#81373a")))
+  '((t (:background "#81393d")))
   "Accent BG face for elemental-theme. Used to highlight selected match,
 etc."
   :group 'elemental-theme)
