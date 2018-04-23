@@ -22,12 +22,14 @@ active modeline."
 (defface elemental-highlight-bg-1-face
   '((t (:background "#4b4f53")))
   "Accent BG face for elemental-theme. Used to highlight matches,
-etc.")
+etc."
+  :group 'elemental-theme)
 
 (defface elemental-highlight-bg-2-face
   '((t (:background "#81373a")))
   "Accent BG face for elemental-theme. Used to highlight selected match,
-etc.")
+etc."
+  :group 'elemental-theme)
 
 (defface elemental-hidden-fg-face
   '((t (:foreground "#192129")))
