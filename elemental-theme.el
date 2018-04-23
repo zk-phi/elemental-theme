@@ -132,7 +132,7 @@ texts like visited links."
      (minibuffer-prompt :inherit elemental-cyan-face :weight bold)
      (mode-line :inherit (elemental-bright-fg-face elemental-brighter-bg-face) :box nil)
      (mode-line-inactive :inherit elemental-bright-bg-face :box nil)
-     (region :inherit elemental-brighter-bg-face)
+     (region :inherit default :inverse-video t)
      (secondary-selection :inherit elemental-bright-bg-face)
      (trailing-whitespace :inherit elemental-red-face :inverse-video t)
      (vertical-border :inherit default)
