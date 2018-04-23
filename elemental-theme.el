@@ -39,7 +39,7 @@ face."
   :group 'elemental-theme)
 
 (defface elemental-darker-fg-face
-  '((t (:foreground "#3c4146")))
+  '((t (:foreground "#3b4146")))
   "Darker FG face for elemental-theme. This face is expected to
 be darker than `elemental-dark-fg-face' and nearly
 invisible. Used to render non-character UI parts like indent
@@ -47,7 +47,7 @@ guide."
   :group 'elemental-theme)
 
 (defface elemental-dark-fg-face
-  '((t (:foreground "#585a5d")))
+  '((t (:foreground "#616466")))
   "Dark FG face for elemental-theme. This face is expected to be
 darker than `default' but brighter than
 `elemental-darker-fg-face'. Used to highlight muted text like
