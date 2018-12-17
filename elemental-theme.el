@@ -72,9 +72,16 @@ texts like links."
 texts like visited links."
   :group 'elemental-theme)
 
-(defface elemental-yellow-face
+(defface elemental-accent-fg-3-face
   '((t (:foreground "#e0b776")))
-  "Yellow face for elemental-theme."
+  "An accent face for elemental-theme. Used to highlight type
+names, etc."
+  :group 'elemental-theme)
+
+(defface elemental-accent-fg-4-face
+  '((t (:foreground "#649d8a")))
+  "An accent face for elemental-theme. Used to highlight prompt,
+string, etc."
   :group 'elemental-theme)
 
 (defface elemental-red-face
@@ -95,11 +102,6 @@ texts like visited links."
 (defface elemental-orange-face
   '((t (:foreground "#729fcf")))
   "Orange face for elemental-theme."
-  :group 'elemental-theme)
-
-(defface elemental-cyan-face
-  '((t (:foreground "#649d8a")))
-  "Cyan face for elemental-theme."
   :group 'elemental-theme)
 
 (defconst elemental-faces-list
@@ -129,7 +131,7 @@ texts like visited links."
      (isearch-fail :inherit error)
      (lazy-highlight :inherit match)
      (menu :inherit elemental-bright-bg-face)
-     (minibuffer-prompt :inherit elemental-cyan-face :weight bold)
+     (minibuffer-prompt :inherit elemental-accent-fg-4-face :weight bold)
      (mode-line :inherit (elemental-bright-fg-face elemental-brighter-bg-face) :box nil)
      (mode-line-inactive :inherit elemental-bright-bg-face :box nil)
      (region :inherit default :inverse-video t)
@@ -147,7 +149,7 @@ texts like visited links."
 
      ;; diff
      (diff-added          :inherit elemental-green-face :weight bold)
-     (diff-changed        :inherit elemental-yellow-face :weight bold)
+     (diff-changed        :inherit elemental-accent-fg-3-face :weight bold)
      (diff-file-header    :inherit elemental-blue-face)
      (diff-header         :inherit elemental-bright-fg-face)
      (diff-hunk-header    :inherit default)
@@ -163,15 +165,15 @@ texts like visited links."
 
      ;; eshell
      (eshell-ls-archive :inherit elemental-accent-fg-2-face)
-     (eshell-ls-backup :inherit elemental-yellow-face)
+     (eshell-ls-backup :inherit elemental-accent-fg-3-face)
      (eshell-ls-clutter :inherit elemental-orange-face)
      (eshell-ls-directory :inherit elemental-blue-face)
      (eshell-ls-executable :inherit elemental-green-face)
      (eshell-ls-missing :inherit elemental-red-face)
-     (eshell-ls-product :inherit elemental-yellow-face)
+     (eshell-ls-product :inherit elemental-accent-fg-3-face)
      (eshell-ls-readonly :inherit elemental-bright-fg-face)
      (eshell-ls-special :inherit elemental-accent-fg-1-face)
-     (eshell-ls-symlink :inherit elemental-cyan-face)
+     (eshell-ls-symlink :inherit elemental-accent-fg-4-face)
      (eshell-ls-unreadable :inherit elemental-dark-fg-face)
      (eshell-prompt :inherit elemental-green-face :weight bold)
 
@@ -180,7 +182,7 @@ texts like visited links."
      (font-lock-color-constant-face :inherit elemental-green-face)
      (font-lock-comment-delimiter-face :inherit elemental-dark-fg-face :slant italic)
      (font-lock-comment-face :inherit elemental-dark-fg-face :slant italic)
-     (font-lock-constant-face :inherit elemental-cyan-face)
+     (font-lock-constant-face :inherit elemental-accent-fg-4-face)
      (font-lock-doc-face :inherit elemental-dark-fg-face :slant italic)
      (font-lock-doc-string-face :inherit elemental-dark-fg-face :slant italic)
      (font-lock-exit-face :inherit elemental-red-face)
@@ -190,12 +192,12 @@ texts like visited links."
      (font-lock-other-emphasized-face :inherit elemental-accent-fg-1-face :weight bold :slant italic)
      (font-lock-other-type-face :inherit elemental-blue-face :slant italic)
      (font-lock-preprocessor-face :inherit elemental-orange-face)
-     (font-lock-reference-face :inherit elemental-cyan-face)
+     (font-lock-reference-face :inherit elemental-accent-fg-4-face)
      (font-lock-regexp-grouping-backslash :inherit elemental-red-face)
      (font-lock-regexp-grouping-construct :inherit elemental-red-face)
      (font-lock-special-keyword-face :inherit elemental-red-face)
-     (font-lock-string-face :inherit elemental-cyan-face)
-     (font-lock-type-face :inherit elemental-yellow-face)
+     (font-lock-string-face :inherit elemental-accent-fg-4-face)
+     (font-lock-type-face :inherit elemental-accent-fg-3-face)
      (font-lock-variable-name-face :inherit elemental-blue-face)
      (font-lock-warning-face :inherit elemental-red-face :weight bold)
 
@@ -206,27 +208,27 @@ texts like visited links."
      ;; org
      (org-agenda-dimmed-todo-face :inherit elemental-dark-fg-face)
      (org-agenda-done :inherit elemental-green-face)
-     (org-agenda-restriction-lock :inherit elemental-cyan-face :inverse-video t)
+     (org-agenda-restriction-lock :inherit elemental-accent-fg-4-face :inverse-video t)
      (org-agenda-structure :inherit elemental-blue-face :weight bold)
      (org-archived :inherit elemental-dark-fg-face)
      (org-block :inherit elemental-dark-fg-face)
      (org-block-background :inherit elemental-bright-bg-face)
      (org-cancelled-kwd-face :inherit elemental-green-face)
      (org-checkbox :weight bold)
-     (org-clock-overlay :inherit elemental-cyan-face)
+     (org-clock-overlay :inherit elemental-accent-fg-4-face)
      (org-code :inherit elemental-dark-fg-face)
-     (org-column :inherit elemental-cyan-face :inverse-video t)
+     (org-column :inherit elemental-accent-fg-4-face :inverse-video t)
      (org-column-title :weight bold :inverse-video t)
      (org-date :inherit elemental-accent-fg-1-face :underline t)
      (org-date-selected :inherit elemental-red-face :inverse-video t)
      (org-default :inherit default)
-     (org-delegated-kwd-face :inherit elemental-cyan-face)
+     (org-delegated-kwd-face :inherit elemental-accent-fg-4-face)
      (org-document-info-keyword :inherit elemental-dark-fg-face)
-     (org-document-title :inherit elemental-cyan-face :weight bold)
+     (org-document-title :inherit elemental-accent-fg-4-face :weight bold)
      (org-done :inherit elemental-green-face :weight bold)
      (org-done-kwd-face :inherit elemental-green-face :weight bold)
      (org-drawer :inherit elemental-blue-face :weight bold)
-     (org-ellipses :inherit elemental-yellow-face :strike-through t)
+     (org-ellipses :inherit elemental-accent-fg-3-face :strike-through t)
      (org-footnote :inherit elemental-accent-fg-1-face :underline t)
      (org-formula :inherit elemental-red-face :weight bold :slant italic)
      (org-headline-done :inherit elemental-dark-fg-face)
@@ -250,11 +252,11 @@ texts like visited links."
      (org-sexp-date :inherit elemental-accent-fg-1-face :underline t)
      (org-someday-kwd-face :inherit elemental-blue-face)
      (org-special-keyword :inherit elemental-dark-fg-face :slant italic)
-     (org-started-kwd-face :inherit elemental-yellow-face)
-     (org-table :inherit elemental-cyan-face)
+     (org-started-kwd-face :inherit elemental-accent-fg-3-face)
+     (org-table :inherit elemental-accent-fg-4-face)
      (org-tag :weight bold)
      (org-target :underline t)
-     (org-time-grid :inherit elemental-yellow-face)
+     (org-time-grid :inherit elemental-accent-fg-3-face)
      (org-todo :inherit elemental-red-face :inverse-video t :weight bold)
      (org-todo-kwd-face :inherit elemental-red-face :inverse-video t :weight bold)
      (org-upcoming-deadline :inherit elemental-red-face :weight bold)
@@ -264,8 +266,8 @@ texts like visited links."
 
      ;; outline
      (outline-1 :inherit elemental-blue-face)
-     (outline-2 :inherit elemental-cyan-face)
-     (outline-3 :inherit elemental-yellow-face)
+     (outline-2 :inherit elemental-accent-fg-4-face)
+     (outline-3 :inherit elemental-accent-fg-3-face)
      (outline-4 :inherit elemental-red-face)
      (outline-5 :inherit default)
      (outline-6 :inherit elemental-dark-fg-face)
@@ -273,7 +275,7 @@ texts like visited links."
      (outline-8 :inherit elemental-accent-fg-1-face)
 
      ;; show-paren
-     (show-paren-match :inherit elemental-cyan-face :underline t :weight bold)
+     (show-paren-match :inherit elemental-accent-fg-4-face :underline t :weight bold)
      (show-paren-mismatch :inherit elemental-red-face :inverse-video t :weight bold)
 
      ;; ----- plugins -----
@@ -353,7 +355,7 @@ texts like visited links."
      (whitespace-indentation :inherit elemental-hidden-fg-face)
      (whitespace-line :inherit elemental-accent-fg-2-face)
      (whitespace-space :inherit elemental-hidden-fg-face)
-     (whitespace-space-after-tab :inherit elemental-cyan-face)
+     (whitespace-space-after-tab :inherit elemental-accent-fg-4-face)
      (whitespace-space-before-tab :inherit elemental-red-face :weight bold)
      (whitespace-tab :inherit elemental-hidden-fg-face)
      (whitespace-trailing :inherit elemental-red-face :weight bold)
