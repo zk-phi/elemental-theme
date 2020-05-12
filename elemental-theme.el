@@ -158,6 +158,11 @@ string, etc."
      (diff-refine-removed :inherit diff-removed :inverse-video t)
      (diff-removed        :inherit elemental-red-face :weight bold)
 
+     ;; smerge
+     (smerge-upper :inherit default)
+     (smerge-base :inherit elemental-highlight-bg-1-face)
+     (smerge-lower :inherit default)
+
      ;; ido
      (ido-first-match :inherit elemental-green-face :weight bold)
      (ido-only-match :inherit elemental-green-face)
