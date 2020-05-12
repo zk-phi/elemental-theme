@@ -289,8 +289,8 @@ string, etc."
      (ace-jump-face-foreground :inherit elemental-red-face :weight bold)
 
      ;; cperl-mode
-     (cperl-hash-face :inherit font-lock-variable-name-face :weight unspecified :slant italic :underline t)
-     (cperl-array-face :inherit font-lock-variable-name-face :slant italic :underline t)
+     (cperl-hash-face :weight unspecified :slant italic :underline t)
+     (cperl-array-face :slant italic :underline t)
      (cperl-nonoverridable-face :inherit font-lock-keyword-face :weight unspecified :slant unspecified :underline nil)
 
      ;; flymake
