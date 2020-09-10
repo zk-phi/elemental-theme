@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t -*-
 ;; 全部 inherit で作った theme があってもよさそうというアイデア。
 ;; 根本の face を set-face-attribue するだけでダイナミックに色を変えられる。
 ;; メタ・カラースキーム的な考え方とも相性がいい。
