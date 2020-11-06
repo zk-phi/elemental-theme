@@ -360,10 +360,10 @@ string, etc."
      (whitespace-hspace :inherit elemental-orange-face)
      (whitespace-indentation :inherit elemental-hidden-fg-face)
      (whitespace-line :inherit elemental-accent-fg-2-face)
-     (whitespace-space :inherit elemental-hidden-fg-face)
+     (whitespace-space :inherit elemental-darker-fg-face)
      (whitespace-space-after-tab :inherit elemental-accent-fg-4-face)
      (whitespace-space-before-tab :inherit elemental-red-face :weight bold)
-     (whitespace-tab :inherit elemental-hidden-fg-face)
+     (whitespace-tab :inherit elemental-darker-fg-face)
      (whitespace-trailing :inherit elemental-red-face :weight bold)
      )))
 
