@@ -289,6 +289,20 @@ string, etc."
      (ace-jump-face-background :inherit elemental-dark-fg-face)
      (ace-jump-face-foreground :inherit elemental-red-face :weight bold)
 
+     ;; company-mode
+     (company-tooltip :inherit (elemental-bright-bg-face elemental-bright-fg-face))
+     (company-tooltip-common :inherit elemental-accent-fg-3-face)
+     (company-tooltip-annotation :inherit elemental-accent-fg-1-face)
+     (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
+     (company-tooltip-mouse :inherit elemental-accent-fg-4-face)
+     (company-tooltip-search :inherit elemental-highlight-bg-2-face)
+     (company-tooltip-search-selection :inherit elemental-highlight-bg-2-face)
+     (company-preview :inherit elemental-bright-bg-face)
+     (company-preview-common :inherit elemental-accent-fg-3-face)
+     (company-preview-search :inherit elemental-highlight-bg-2-face)
+     (company-scrollbar-fg :inherit elemental-highlight-bg-1-face)
+     (company-scrollbar-bg :inherit elemental-brighter-bg-face)
+
      ;; cperl-mode
      (cperl-hash-face :weight unspecified :slant italic :underline t)
      (cperl-array-face :slant italic :underline t)
@@ -327,6 +341,16 @@ string, etc."
      (markdown-link-face :inherit shadow)
      (markdown-link-title-face :inherit link)
      (markdown-url-face :inherit link)
+
+     ;; popup
+     (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face))
+     (popup-tip-face :inherit (elemental-brighter-bg-face elemental-bright-bg-face))
+     (popup-summary-face :inherit elemental-bright-bg-face)
+     (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
+     (popup-scroll-bar-background-face :inherit elemental-brighter-bg-face)
+     (popup-isearch-match :inherit elemental-highlight-bg-2-face)
+     (popup-menu-mouse-face :inherit elemental-accent-fg-4-face)
+     (popup-menu-selection-face :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
 
      ;; rainbow-delimiters-mode
      (rainbow-delimiters-depth-1-face :inherit elemental-blue-face)
