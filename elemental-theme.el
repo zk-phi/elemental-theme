@@ -296,7 +296,7 @@ string, etc."
      (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
      (company-tooltip-mouse :inherit elemental-accent-fg-4-face)
      (company-tooltip-search :inherit elemental-highlight-bg-2-face)
-     (company-tooltip-search-selection :inherit elemental-highlight-bg-2-face)
+     (company-tooltip-search-selection :inherit company-tooltip-search)
      (company-preview :inherit elemental-bright-bg-face)
      (company-preview-common :inherit elemental-accent-fg-3-face)
      (company-preview-search :inherit elemental-highlight-bg-2-face)
@@ -344,13 +344,13 @@ string, etc."
 
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face) :weight bold)
-     (popup-tip-face :inherit (elemental-brighter-bg-face elemental-bright-bg-face) :weight bold)
-     (popup-summary-face :inherit elemental-dark-fg-face)
+     (popup-tip-face :inherit (elemental-brighter-bg-face popup-face))
+     (popup-summary-face :inherit (elemental-dark-fg-face popup-face) :weight normal)
      (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
      (popup-scroll-bar-background-face :inherit elemental-brighter-bg-face)
-     (popup-isearch-match :inherit elemental-highlight-bg-2-face :weight bold)
-     (popup-menu-mouse-face :inherit elemental-accent-fg-4-face :weight bold)
-     (popup-menu-selection-face :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face) :weight bold)
+     (popup-isearch-match :inherit (elemental-highlight-bg-2-face popup-face))
+     (popup-menu-mouse-face :inherit (elemental-accent-fg-4-face popup-face))
+     (popup-menu-selection-face :inherit (elemental-highlight-bg-1-face popup-face))
 
      ;; rainbow-delimiters-mode
      (rainbow-delimiters-depth-1-face :inherit elemental-blue-face)
