@@ -292,7 +292,7 @@ string, etc."
      ;; company-mode
      (company-tooltip :inherit (elemental-bright-bg-face elemental-bright-fg-face))
      (company-tooltip-common :inherit elemental-accent-fg-3-face)
-     (company-tooltip-annotation :inherit elemental-accent-fg-1-face)
+     (company-tooltip-annotation :inherit elemental-dark-fg-face)
      (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
      (company-tooltip-mouse :inherit elemental-accent-fg-4-face)
      (company-tooltip-search :inherit elemental-highlight-bg-2-face)
@@ -345,7 +345,7 @@ string, etc."
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face))
      (popup-tip-face :inherit (elemental-brighter-bg-face elemental-bright-bg-face))
-     (popup-summary-face :inherit elemental-bright-bg-face)
+     (popup-summary-face :inherit elemental-dark-fg-face)
      (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
      (popup-scroll-bar-background-face :inherit elemental-brighter-bg-face)
      (popup-isearch-match :inherit elemental-highlight-bg-2-face)
