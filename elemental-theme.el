@@ -159,6 +159,10 @@ string, etc."
      (diff-refine-removed :inherit diff-removed :inverse-video t)
      (diff-removed        :inherit elemental-red-face :weight bold)
 
+     ;; sh-script
+     (sh-heredoc :inherit font-lock-string-face)
+     (sh-quoted-exec :inherit elemental-red-face :weight bold)
+
      ;; smerge
      (smerge-upper :inherit default)
      (smerge-base :inherit elemental-highlight-bg-1-face)
