@@ -6,7 +6,7 @@
 ;; 自分の init.el で my-make-color して作っているような色たちをどうするか。
 
 (defface elemental-bright-bg-face
-  '((t (:background "#282f36")))
+  '((t (:background "#262e36")))
   "Bright BG face for elemental-theme. This face is expected to
 be brighter than `default' but darker than
 `elemental-brighter-bg-face'. Used to highlight the current-line,
@@ -14,20 +14,20 @@ inactive modeline, etc."
   :group 'elemental-theme)
 
 (defface elemental-brighter-bg-face
-  '((t (:background "#373d44")))
+  '((t (:background "#343b42")))
   "Brighter BG face for elemental-theme. This face is expected to
 be brighter than `elemental-bright-bg-face'. Used to highlight
 active modeline."
   :group 'elemental-theme)
 
 (defface elemental-highlight-bg-1-face
-  '((t (:background "#464c52")))
+  '((t (:background "#4b5258")))
   "Accent BG face for elemental-theme. Used to highlight matches,
 etc."
   :group 'elemental-theme)
 
 (defface elemental-highlight-bg-2-face
-  '((t (:background "#7d3539")))
+  '((t (:background "#81443d")))
   "Accent BG face for elemental-theme. Used to highlight selected match,
 etc."
   :group 'elemental-theme)
@@ -40,7 +40,7 @@ face."
   :group 'elemental-theme)
 
 (defface elemental-darker-fg-face
-  '((t (:foreground "#3b4146")))
+  '((t (:foreground "#3c4146")))
   "Darker FG face for elemental-theme. This face is expected to
 be darker than `elemental-dark-fg-face' and nearly
 invisible. Used to render non-character UI parts like indent
@@ -48,7 +48,7 @@ guide."
   :group 'elemental-theme)
 
 (defface elemental-dark-fg-face
-  '((t (:foreground "#616466")))
+  '((t (:foreground "#626466")))
   "Dark FG face for elemental-theme. This face is expected to be
 darker than `default' but brighter than
 `elemental-darker-fg-face'. Used to highlight muted text like
@@ -56,7 +56,7 @@ comment, docstring, etc."
   :group 'elemental-theme)
 
 (defface elemental-bright-fg-face
-  '((t (:foreground "#a4a19e")))
+  '((t (:foreground "#a5a29f")))
   "Bright FG face for elemental-theme. This face is expected to
 be brighter than `default'. Used to highlight emphasized texts."
   :group 'elemental-theme)
@@ -80,7 +80,7 @@ names, etc."
   :group 'elemental-theme)
 
 (defface elemental-accent-fg-4-face
-  '((t (:foreground "#649d8a")))
+  '((t (:foreground "#729fcf")))
   "An accent face for elemental-theme. Used to highlight prompt,
 string, etc."
   :group 'elemental-theme)
@@ -101,7 +101,7 @@ string, etc."
   :group 'elemental-theme)
 
 (defface elemental-orange-face
-  '((t (:foreground "#729fcf")))
+  '((t (:foreground "#649d8a")))
   "Orange face for elemental-theme."
   :group 'elemental-theme)
 
