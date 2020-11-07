@@ -118,7 +118,7 @@ string, etc."
      (shadow :inherit elemental-dark-fg-face)
      (link :inherit elemental-accent-fg-1-face :underline t)
      (link-visited :inherit elemental-accent-fg-2-face :underline t)
-     (match :inherit elemental-highlight-bg-1-face)
+     (match :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
      (error :inherit elemental-red-face :inverse-video t)
      (warning :inherit elemental-red-face :weight bold)
      (success :inherit elemental-blue-face)
@@ -128,7 +128,7 @@ string, etc."
      (header-line :inherit elemental-bright-bg-face :inverse-video t)
      (highlight :inherit elemental-bright-bg-face)
      (hl-line :inherit elemental-bright-bg-face)
-     (isearch :inherit elemental-highlight-bg-2-face)
+     (isearch :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face))
      (isearch-fail :inherit error)
      (lazy-highlight :inherit match)
      (menu :inherit elemental-bright-bg-face)
@@ -165,7 +165,7 @@ string, etc."
 
      ;; smerge
      (smerge-upper :inherit default)
-     (smerge-base :inherit elemental-highlight-bg-1-face)
+     (smerge-base :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
      (smerge-lower :inherit default)
 
      ;; ido
