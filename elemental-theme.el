@@ -130,7 +130,7 @@ string, etc."
      (hl-line :inherit elemental-bright-bg-face)
      (menu :inherit elemental-bright-bg-face)
      (minibuffer-prompt :inherit (elemental-accent-fg-4-face bold))
-     (mode-line :inherit (elemental-bright-fg-face elemental-brighter-bg-face) :box nil)
+     (mode-line :inherit (elemental-brighter-bg-face elemental-bright-fg-face) :box nil)
      (mode-line-inactive :inherit elemental-bright-bg-face :box nil)
      (region :inherit default :inverse-video t)
      (secondary-selection :inherit elemental-bright-bg-face)
