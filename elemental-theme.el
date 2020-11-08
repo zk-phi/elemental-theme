@@ -105,6 +105,21 @@ string, etc."
   "Orange face for elemental-theme."
   :group 'elemental-theme)
 
+(defface elemental-region-face
+  '((t (:inherit default :inverse-video t region)))
+  "Region face for elemental-theme."
+  :group 'elemental-theme)
+
+(defface elemental-link-face
+  '((t (:inherit (elemental-accent-fg-1-face underline))))
+  "Link face for elemental-theme."
+  :group 'elemental-theme)
+
+(defface elemental-visited-link-face
+  '((t (:inherit (elemental-accent-fg-2-face underline))))
+  "Visited link face for elemental-theme."
+  :group 'elemental-theme)
+
 (defconst elemental-faces-list
   (mapcar
    (lambda (x)
@@ -118,8 +133,8 @@ string, etc."
 
      ;; ----- basic -----
      (shadow :inherit elemental-dark-fg-face)
-     (link :inherit (elemental-accent-fg-1-face underline))
-     (link-visited :inherit (elemental-accent-fg-2-face underline))
+     (link :inherit elemental-link-face)
+     (link-visited :inherit elemental-visited-link-face)
      (match :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
      (error :inherit elemental-red-face :inverse-video t)
      (warning :inherit (elemental-red-face bold))
@@ -134,7 +149,7 @@ string, etc."
      (minibuffer-prompt :inherit (elemental-accent-fg-4-face bold))
      (mode-line :inherit (elemental-brighter-bg-face elemental-bright-fg-face bold))
      (mode-line-inactive :inherit (elemental-bright-bg-face elemental-dark-fg-face bold))
-     (region :inherit default :inverse-video t)
+     (region :inherit elemental-region-face)
      (secondary-selection :inherit elemental-bright-bg-face)
      (trailing-whitespace :inherit elemental-red-face :inverse-video t)
      (vertical-border :inherit default)
@@ -216,8 +231,8 @@ string, etc."
      (font-lock-warning-face :inherit (elemental-red-face bold))
 
      ;; info
-     (info-xref :inherit (elemental-accent-fg-1-face underline))
-     (info-xref-visited :inherit (elemental-accent-fg-2-face underline))
+     (info-xref :inherit elemental-link-face)
+     (info-xref-visited :inherit elemental-visited-link-face)
 
      ;; org
      (org-agenda-dimmed-todo-face :inherit elemental-dark-fg-face)
@@ -256,7 +271,7 @@ string, etc."
      (org-level-6 :inherit elemental-dark-fg-face)
      (org-level-7 :inherit elemental-orange-face)
      (org-level-8 :inherit elemental-accent-fg-1-face)
-     (org-link :inherit (elemental-accent-fg-1-face underline))
+     (org-link :inherit elemental-link-face)
      (org-list-dt :inherit bold)
      (org-priority :inherit (elemental-dark-fg-face italic))
      (org-project-kwd-face :inherit elemental-accent-fg-1-face)
@@ -346,9 +361,9 @@ string, etc."
      (markdown-header-face-6 :inherit elemental-dark-fg-face)
      (markdown-header-rule-face :inherit elemental-dark-fg-face)
      (markdown-italic-face :inherit italic)
-     (markdown-link-face :inherit elemental-dark-fg-face)
-     (markdown-link-title-face :inherit (elemental-accent-fg-1-face underline))
-     (markdown-url-face :inherit (elemental-accent-fg-1-face underline))
+     (markdown-link-face :inherit elemental-link-face)
+     (markdown-link-title-face :inherit elemental-link-face)
+     (markdown-url-face :inherit elemental-link-face)
 
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
@@ -373,7 +388,7 @@ string, etc."
 
      ;; stripe-buffer
      (stripe-highlight :inherit elemental-bright-bg-face)
-     (stripe-hl-line :inherit default :inverse-video t)
+     (stripe-hl-line :inherit elemental-region-face)
 
      ;; web-mode
      (web-mode-doctype-face :inherit elemental-blue-face)
