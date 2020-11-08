@@ -128,9 +128,6 @@ string, etc."
      (header-line :inherit elemental-bright-bg-face :inverse-video t)
      (highlight :inherit elemental-bright-bg-face)
      (hl-line :inherit elemental-bright-bg-face)
-     (isearch :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face))
-     (isearch-fail :inherit error)
-     (lazy-highlight :inherit match)
      (menu :inherit elemental-bright-bg-face)
      (minibuffer-prompt :inherit (elemental-accent-fg-4-face bold))
      (mode-line :inherit (elemental-bright-fg-face elemental-brighter-bg-face) :box nil)
@@ -172,6 +169,11 @@ string, etc."
      (ido-first-match :inherit (elemental-green-face bold))
      (ido-only-match :inherit elemental-green-face)
      (ido-subdir :inherit elemental-blue-face)
+
+     ;; isearch
+     (isearch :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face))
+     (isearch-fail :inherit error)
+     (lazy-highlight :inherit match)
 
      ;; eshell
      (eshell-ls-archive :inherit elemental-accent-fg-2-face)
