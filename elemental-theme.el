@@ -397,13 +397,6 @@ string, etc."
      (whitespace-trailing :inherit (elemental-red-face bold))
      )))
 
-;;;###autoload
-(defun elemental-theme-apply-face (face &rest attributes)
-  (declare (indent 1))
-  (custom-theme-set-faces
-   'elemental-theme
-   `(,face ((t (:foreground unspecified :background unspecified ,@attributes))))))
-
 (deftheme elemental-theme "An elemental theme.")
 (apply 'custom-theme-set-faces 'elemental-theme elemental-faces-list)
 (provide-theme 'elemental-theme)
