@@ -109,7 +109,9 @@ string, etc."
   (mapcar
    (lambda (x)
      `(,(car x)
-       ((t (:foreground unspecified :background unspecified ,@(cdr x))))))
+       ((t
+         (:foreground unspecified :background unspecified :box unspecified
+                      :underline unspecified :weight unspecified :slant unspecified ,@(cdr x))))))
    '(;; ----- special faces -----
      (default :background "#192129" :foreground "#7d7d7d")
      (cursor :background "#7d7d7d")
@@ -130,8 +132,8 @@ string, etc."
      (hl-line :inherit elemental-bright-bg-face)
      (menu :inherit elemental-bright-bg-face)
      (minibuffer-prompt :inherit (elemental-accent-fg-4-face bold))
-     (mode-line :inherit (elemental-brighter-bg-face elemental-bright-fg-face) :box nil)
-     (mode-line-inactive :inherit elemental-bright-bg-face :box nil)
+     (mode-line :inherit (elemental-brighter-bg-face elemental-bright-fg-face))
+     (mode-line-inactive :inherit elemental-bright-bg-face)
      (region :inherit default :inverse-video t)
      (secondary-selection :inherit elemental-bright-bg-face)
      (trailing-whitespace :inherit elemental-red-face :inverse-video t)
@@ -310,9 +312,9 @@ string, etc."
      (company-scrollbar-bg :inherit elemental-brighter-bg-face)
 
      ;; cperl-mode
-     (cperl-hash-face :inherit (italic underline) :weight unspecified)
+     (cperl-hash-face :inherit (italic underline))
      (cperl-array-face :inherit (italic underline))
-     (cperl-nonoverridable-face :inherit elemental-green-face :weight unspecified :slant unspecified :underline nil)
+     (cperl-nonoverridable-face :inherit elemental-green-face)
 
      ;; flymake
      (flymake-errline :inherit (elemental-red-face bold))
