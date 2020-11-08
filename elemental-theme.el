@@ -116,8 +116,8 @@ string, etc."
 
      ;; ----- basic -----
      (shadow :inherit elemental-dark-fg-face)
-     (link :inherit elemental-accent-fg-1-face :underline t)
-     (link-visited :inherit elemental-accent-fg-2-face :underline t)
+     (link :inherit (elemental-accent-fg-1-face underline))
+     (link-visited :inherit (elemental-accent-fg-2-face underline))
      (match :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
      (error :inherit elemental-red-face :inverse-video t)
      (warning :inherit (elemental-red-face bold))
@@ -214,8 +214,8 @@ string, etc."
      (font-lock-warning-face :inherit (elemental-red-face bold))
 
      ;; info
-     (info-xref :inherit elemental-accent-fg-1-face :underline t)
-     (info-xref-visited :inherit elemental-accent-fg-2-face :underline t)
+     (info-xref :inherit (elemental-accent-fg-1-face underline))
+     (info-xref-visited :inherit (elemental-accent-fg-2-face underline))
 
      ;; org
      (org-agenda-dimmed-todo-face :inherit elemental-dark-fg-face)
@@ -231,7 +231,7 @@ string, etc."
      (org-code :inherit elemental-dark-fg-face)
      (org-column :inherit elemental-accent-fg-4-face :inverse-video t)
      (org-column-title :inherit bold :inverse-video t)
-     (org-date :inherit elemental-accent-fg-1-face :underline t)
+     (org-date :inherit (elemental-accent-fg-1-face underline))
      (org-date-selected :inherit elemental-red-face :inverse-video t)
      (org-default :inherit default)
      (org-delegated-kwd-face :inherit elemental-accent-fg-4-face)
@@ -241,7 +241,7 @@ string, etc."
      (org-done-kwd-face :inherit (elemental-green-face bold))
      (org-drawer :inherit (elemental-blue-face bold))
      (org-ellipses :inherit elemental-accent-fg-3-face :strike-through t)
-     (org-footnote :inherit elemental-accent-fg-1-face :underline t)
+     (org-footnote :inherit (elemental-accent-fg-1-face underline))
      (org-formula :inherit (elemental-red-face bold italic))
      (org-headline-done :inherit elemental-dark-fg-face)
      (org-hide :inherit elemental-hidden-fg-face)
@@ -254,25 +254,25 @@ string, etc."
      (org-level-6 :inherit elemental-dark-fg-face)
      (org-level-7 :inherit elemental-orange-face)
      (org-level-8 :inherit elemental-accent-fg-1-face)
-     (org-link :inherit elemental-accent-fg-1-face :underline t)
+     (org-link :inherit (elemental-accent-fg-1-face underline))
      (org-list-dt :inherit bold)
      (org-priority :inherit (elemental-dark-fg-face italic))
      (org-project-kwd-face :inherit elemental-accent-fg-1-face)
      (org-scheduled :inherit (elemental-green-face bold italic))
      (org-scheduled-previously :inherit (elemental-red-face bold))
      (org-scheduled-today :inherit (elemental-green-face bold italic))
-     (org-sexp-date :inherit elemental-accent-fg-1-face :underline t)
+     (org-sexp-date :inherit (elemental-accent-fg-1-face underline))
      (org-someday-kwd-face :inherit elemental-blue-face)
      (org-special-keyword :inherit (elemental-dark-fg-face italic))
      (org-started-kwd-face :inherit elemental-accent-fg-3-face)
      (org-table :inherit elemental-accent-fg-4-face)
      (org-tag :inherit bold)
-     (org-target :underline t)
+     (org-target :inherit underline)
      (org-time-grid :inherit elemental-accent-fg-3-face)
      (org-todo :inherit (elemental-red-face bold) :inverse-video t)
      (org-todo-kwd-face :inherit (elemental-red-face bold) :inverse-video t)
      (org-upcoming-deadline :inherit (elemental-red-face bold))
-     (org-verbatim :inherit elemental-dark-fg-face :underline t)
+     (org-verbatim :inherit (elemental-dark-fg-face underline))
      (org-waiting-kwd-face :inherit elemental-orange-face)
      (org-warning :inherit (elemental-red-face bold))
 
@@ -287,7 +287,7 @@ string, etc."
      (outline-8 :inherit elemental-accent-fg-1-face)
 
      ;; show-paren
-     (show-paren-match :inherit (elemental-accent-fg-4-face bold) :underline t)
+     (show-paren-match :inherit (elemental-accent-fg-4-face bold underline))
      (show-paren-mismatch :inherit (elemental-red-face bold) :inverse-video t)
 
      ;; ----- plugins -----
@@ -310,8 +310,8 @@ string, etc."
      (company-scrollbar-bg :inherit elemental-brighter-bg-face)
 
      ;; cperl-mode
-     (cperl-hash-face :weight unspecified :slant italic :underline t)
-     (cperl-array-face :inherit italic :underline t)
+     (cperl-hash-face :inherit (italic underline) :weight unspecified)
+     (cperl-array-face :inherit (italic underline))
      (cperl-nonoverridable-face :inherit elemental-green-face :weight unspecified :slant unspecified :underline nil)
 
      ;; flymake
@@ -345,8 +345,8 @@ string, etc."
      (markdown-header-rule-face :inherit elemental-dark-fg-face)
      (markdown-italic-face :inherit italic)
      (markdown-link-face :inherit elemental-dark-fg-face)
-     (markdown-link-title-face :inherit elemental-accent-fg-1-face :underline t)
-     (markdown-url-face :inherit elemental-accent-fg-1-face :underline t)
+     (markdown-link-title-face :inherit (elemental-accent-fg-1-face underline))
+     (markdown-url-face :inherit (elemental-accent-fg-1-face underline))
 
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
