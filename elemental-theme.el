@@ -151,13 +151,13 @@ string, etc."
      (diff-file-header :inherit elemental-blue-face)
      (diff-header :inherit elemental-bright-fg-face)
      (diff-hunk-header :inherit default)
-     (diff-refine-added :inherit diff-added :inverse-video t)
+     (diff-refine-added :inherit (elemental-green-face bold) :inverse-video t)
      (diff-refine-change :inherit (elemental-blue-face bold))
-     (diff-refine-removed :inherit diff-removed :inverse-video t)
+     (diff-refine-removed :inherit (elemental-red-face bold) :inverse-video t)
      (diff-removed :inherit (elemental-red-face bold))
 
      ;; sh-script
-     (sh-heredoc :inherit font-lock-string-face)
+     (sh-heredoc :inherit elemental-accent-fg-4-face)
      (sh-quoted-exec :inherit (elemental-red-face bold))
 
      ;; smerge
@@ -172,8 +172,8 @@ string, etc."
 
      ;; isearch
      (isearch :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face))
-     (isearch-fail :inherit error)
-     (lazy-highlight :inherit match)
+     (isearch-fail :inherit elemental-red-face :inverse-video t)
+     (lazy-highlight :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
 
      ;; eshell
      (eshell-ls-archive :inherit elemental-accent-fg-2-face)
@@ -214,8 +214,8 @@ string, etc."
      (font-lock-warning-face :inherit (elemental-red-face bold))
 
      ;; info
-     (info-xref :inherit link)
-     (info-xref-visited :inherit link-visited)
+     (info-xref :inherit elemental-accent-fg-1-face :underline t)
+     (info-xref-visited :inherit elemental-accent-fg-2-face :underline t)
 
      ;; org
      (org-agenda-dimmed-todo-face :inherit elemental-dark-fg-face)
@@ -302,7 +302,7 @@ string, etc."
      (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
      (company-tooltip-mouse :inherit elemental-accent-fg-4-face)
      (company-tooltip-search :inherit elemental-highlight-bg-2-face)
-     (company-tooltip-search-selection :inherit company-tooltip-search)
+     (company-tooltip-search-selection :inherit elemental-highlight-bg-2-face)
      (company-preview :inherit elemental-bright-bg-face)
      (company-preview-common :inherit elemental-accent-fg-3-face)
      (company-preview-search :inherit elemental-highlight-bg-2-face)
@@ -312,7 +312,7 @@ string, etc."
      ;; cperl-mode
      (cperl-hash-face :weight unspecified :slant italic :underline t)
      (cperl-array-face :inherit italic :underline t)
-     (cperl-nonoverridable-face :inherit font-lock-keyword-face :weight unspecified :slant unspecified :underline nil)
+     (cperl-nonoverridable-face :inherit elemental-green-face :weight unspecified :slant unspecified :underline nil)
 
      ;; flymake
      (flymake-errline :inherit (elemental-red-face bold))
@@ -334,7 +334,7 @@ string, etc."
 
      ;; markdown-mode
      (markdown-bold-face :inherit bold)
-     (markdown-header-delimiter-face :inherit shadow)
+     (markdown-header-delimiter-face :inherit elemental-dark-fg-face)
      (markdown-header-face :inherit elemental-blue-face)
      (markdown-header-face-1 :inherit elemental-blue-face)
      (markdown-header-face-2 :inherit elemental-accent-fg-4-face)
@@ -342,21 +342,21 @@ string, etc."
      (markdown-header-face-4 :inherit elemental-red-face)
      (markdown-header-face-5 :inherit default)
      (markdown-header-face-6 :inherit elemental-dark-fg-face)
-     (markdown-header-rule-face :inherit shadow)
+     (markdown-header-rule-face :inherit elemental-dark-fg-face)
      (markdown-italic-face :inherit italic)
-     (markdown-link-face :inherit shadow)
-     (markdown-link-title-face :inherit link)
-     (markdown-url-face :inherit link)
+     (markdown-link-face :inherit elemental-dark-fg-face)
+     (markdown-link-title-face :inherit elemental-accent-fg-1-face :underline t)
+     (markdown-url-face :inherit elemental-accent-fg-1-face :underline t)
 
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
-     (popup-tip-face :inherit (elemental-brighter-bg-face popup-face))
-     (popup-summary-face :inherit (elemental-dark-fg-face popup-face) :weight normal)
+     (popup-tip-face :inherit (elemental-brighter-bg-face elemental-bright-fg-face bold))
+     (popup-summary-face :inherit (elemental-dark-fg-face elemental-bright-fg-face))
      (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
      (popup-scroll-bar-background-face :inherit elemental-brighter-bg-face)
-     (popup-isearch-match :inherit (elemental-highlight-bg-2-face popup-face))
-     (popup-menu-mouse-face :inherit (elemental-accent-fg-4-face popup-face))
-     (popup-menu-selection-face :inherit (elemental-highlight-bg-1-face popup-face))
+     (popup-isearch-match :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face bold))
+     (popup-menu-mouse-face :inherit (elemental-brighter-bg-face elemental-accent-fg-4-face bold))
+     (popup-menu-selection-face :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face bold))
 
      ;; rainbow-delimiters-mode
      (rainbow-delimiters-depth-1-face :inherit elemental-blue-face)
@@ -371,14 +371,14 @@ string, etc."
 
      ;; stripe-buffer
      (stripe-highlight :inherit elemental-bright-bg-face)
-     (stripe-hl-line :inherit region)
+     (stripe-hl-line :inherit default :inverse-video t)
 
      ;; web-mode
-     (web-mode-doctype-face :inherit web-mode-html-tag-bracket-face)
-     (web-mode-error-face :inherit error)
+     (web-mode-doctype-face :inherit elemental-blue-face)
+     (web-mode-error-face :inherit elemental-red-face :inverse-video t)
      (web-mode-function-call-face :inherit default)
-     (web-mode-hash-key-face :inherit web-mode-keyword-face)
-     (web-mode-html-attr-name-face :inherit web-mode-keyword-face)
+     (web-mode-hash-key-face :inherit elemental-green-face)
+     (web-mode-html-attr-name-face :inherit elemental-green-face)
      (web-mode-html-tag-bracket-face :inherit elemental-blue-face)
      (web-mode-html-tag-face :inherit default)
      (web-mode-json-context-face :inherit font-lock-builtin-face)
