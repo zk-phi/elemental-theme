@@ -120,7 +120,7 @@ string, etc."
      (link-visited :inherit elemental-accent-fg-2-face :underline t)
      (match :inherit (elemental-highlight-bg-1-face elemental-bright-fg-face))
      (error :inherit elemental-red-face :inverse-video t)
-     (warning :inherit elemental-red-face :weight bold)
+     (warning :inherit (elemental-red-face bold))
      (success :inherit elemental-blue-face)
      (escape-glyph-face :inherit elemental-red-face)
      (fringe :inherit elemental-dark-fg-face)
@@ -132,7 +132,7 @@ string, etc."
      (isearch-fail :inherit error)
      (lazy-highlight :inherit match)
      (menu :inherit elemental-bright-bg-face)
-     (minibuffer-prompt :inherit elemental-accent-fg-4-face :weight bold)
+     (minibuffer-prompt :inherit (elemental-accent-fg-4-face bold))
      (mode-line :inherit (elemental-bright-fg-face elemental-brighter-bg-face) :box nil)
      (mode-line-inactive :inherit elemental-bright-bg-face :box nil)
      (region :inherit default :inverse-video t)
@@ -145,23 +145,23 @@ string, etc."
      (comint-highlight-prompt :inherit elemental-blue-face)
 
      ;; compilation
-     (compilation-info :inherit elemental-green-face :weight bold)
-     (compilation-warning :inherit elemental-orange-face :weight bold)
+     (compilation-info :inherit (elemental-green-face bold))
+     (compilation-warning :inherit (elemental-orange-face bold))
 
      ;; diff
-     (diff-added          :inherit elemental-green-face :weight bold)
-     (diff-changed        :inherit elemental-accent-fg-3-face :weight bold)
-     (diff-file-header    :inherit elemental-blue-face)
-     (diff-header         :inherit elemental-bright-fg-face)
-     (diff-hunk-header    :inherit default)
-     (diff-refine-added   :inherit diff-added :inverse-video t)
-     (diff-refine-change  :inherit elemental-blue-face :weight bold)
+     (diff-added :inherit (elemental-green-face bold))
+     (diff-changed :inherit (elemental-accent-fg-3-face bold))
+     (diff-file-header :inherit elemental-blue-face)
+     (diff-header :inherit elemental-bright-fg-face)
+     (diff-hunk-header :inherit default)
+     (diff-refine-added :inherit diff-added :inverse-video t)
+     (diff-refine-change :inherit (elemental-blue-face bold))
      (diff-refine-removed :inherit diff-removed :inverse-video t)
-     (diff-removed        :inherit elemental-red-face :weight bold)
+     (diff-removed :inherit (elemental-red-face bold))
 
      ;; sh-script
      (sh-heredoc :inherit font-lock-string-face)
-     (sh-quoted-exec :inherit elemental-red-face :weight bold)
+     (sh-quoted-exec :inherit (elemental-red-face bold))
 
      ;; smerge
      (smerge-upper :inherit default)
@@ -169,7 +169,7 @@ string, etc."
      (smerge-lower :inherit default)
 
      ;; ido
-     (ido-first-match :inherit elemental-green-face :weight bold)
+     (ido-first-match :inherit (elemental-green-face bold))
      (ido-only-match :inherit elemental-green-face)
      (ido-subdir :inherit elemental-blue-face)
 
@@ -185,22 +185,22 @@ string, etc."
      (eshell-ls-special :inherit elemental-accent-fg-1-face)
      (eshell-ls-symlink :inherit elemental-accent-fg-4-face)
      (eshell-ls-unreadable :inherit elemental-dark-fg-face)
-     (eshell-prompt :inherit elemental-green-face :weight bold)
+     (eshell-prompt :inherit (elemental-green-face bold))
 
      ;; font-lock
      (font-lock-builtin-face :inherit elemental-green-face)
      (font-lock-color-constant-face :inherit elemental-green-face)
-     (font-lock-comment-delimiter-face :inherit elemental-dark-fg-face :slant italic)
-     (font-lock-comment-face :inherit elemental-dark-fg-face :slant italic)
+     (font-lock-comment-delimiter-face :inherit (elemental-dark-fg-face italic))
+     (font-lock-comment-face :inherit (elemental-dark-fg-face italic))
      (font-lock-constant-face :inherit elemental-accent-fg-4-face)
-     (font-lock-doc-face :inherit elemental-dark-fg-face :slant italic)
-     (font-lock-doc-string-face :inherit elemental-dark-fg-face :slant italic)
+     (font-lock-doc-face :inherit (elemental-dark-fg-face italic))
+     (font-lock-doc-string-face :inherit (elemental-dark-fg-face italic))
      (font-lock-exit-face :inherit elemental-red-face)
      (font-lock-function-name-face :inherit elemental-blue-face)
      (font-lock-keyword-face :inherit elemental-green-face)
      (font-lock-negation-char-face :inherit elemental-red-face)
-     (font-lock-other-emphasized-face :inherit elemental-accent-fg-1-face :weight bold :slant italic)
-     (font-lock-other-type-face :inherit elemental-blue-face :slant italic)
+     (font-lock-other-emphasized-face :inherit (elemental-accent-fg-1-face bold italic))
+     (font-lock-other-type-face :inherit (elemental-blue-face italic))
      (font-lock-preprocessor-face :inherit elemental-orange-face)
      (font-lock-reference-face :inherit elemental-accent-fg-4-face)
      (font-lock-regexp-grouping-backslash :inherit elemental-red-face)
@@ -209,7 +209,7 @@ string, etc."
      (font-lock-string-face :inherit elemental-accent-fg-4-face)
      (font-lock-type-face :inherit elemental-accent-fg-3-face)
      (font-lock-variable-name-face :inherit elemental-blue-face)
-     (font-lock-warning-face :inherit elemental-red-face :weight bold)
+     (font-lock-warning-face :inherit (elemental-red-face bold))
 
      ;; info
      (info-xref :inherit link)
@@ -219,28 +219,28 @@ string, etc."
      (org-agenda-dimmed-todo-face :inherit elemental-dark-fg-face)
      (org-agenda-done :inherit elemental-green-face)
      (org-agenda-restriction-lock :inherit elemental-accent-fg-4-face :inverse-video t)
-     (org-agenda-structure :inherit elemental-blue-face :weight bold)
+     (org-agenda-structure :inherit (elemental-blue-face bold))
      (org-archived :inherit elemental-dark-fg-face)
      (org-block :inherit elemental-dark-fg-face)
      (org-block-background :inherit elemental-bright-bg-face)
      (org-cancelled-kwd-face :inherit elemental-green-face)
-     (org-checkbox :weight bold)
+     (org-checkbox :inherit bold)
      (org-clock-overlay :inherit elemental-accent-fg-4-face)
      (org-code :inherit elemental-dark-fg-face)
      (org-column :inherit elemental-accent-fg-4-face :inverse-video t)
-     (org-column-title :weight bold :inverse-video t)
+     (org-column-title :inherit bold :inverse-video t)
      (org-date :inherit elemental-accent-fg-1-face :underline t)
      (org-date-selected :inherit elemental-red-face :inverse-video t)
      (org-default :inherit default)
      (org-delegated-kwd-face :inherit elemental-accent-fg-4-face)
      (org-document-info-keyword :inherit elemental-dark-fg-face)
-     (org-document-title :inherit elemental-accent-fg-4-face :weight bold)
-     (org-done :inherit elemental-green-face :weight bold)
-     (org-done-kwd-face :inherit elemental-green-face :weight bold)
-     (org-drawer :inherit elemental-blue-face :weight bold)
+     (org-document-title :inherit (elemental-accent-fg-4-face bold))
+     (org-done :inherit (elemental-green-face bold))
+     (org-done-kwd-face :inherit (elemental-green-face bold))
+     (org-drawer :inherit (elemental-blue-face bold))
      (org-ellipses :inherit elemental-accent-fg-3-face :strike-through t)
      (org-footnote :inherit elemental-accent-fg-1-face :underline t)
-     (org-formula :inherit elemental-red-face :weight bold :slant italic)
+     (org-formula :inherit (elemental-red-face bold italic))
      (org-headline-done :inherit elemental-dark-fg-face)
      (org-hide :inherit elemental-hidden-fg-face)
      (org-latex-and-related :inherit elemental-orange-face)
@@ -253,26 +253,26 @@ string, etc."
      (org-level-7 :inherit elemental-orange-face)
      (org-level-8 :inherit elemental-accent-fg-1-face)
      (org-link :inherit elemental-accent-fg-1-face :underline t)
-     (org-list-dt :weight bold)
-     (org-priority :inherit elemental-dark-fg-face :slant italic)
+     (org-list-dt :inherit bold)
+     (org-priority :inherit (elemental-dark-fg-face italic))
      (org-project-kwd-face :inherit elemental-accent-fg-1-face)
-     (org-scheduled :inherit elemental-green-face :weight bold :slant italic)
-     (org-scheduled-previously :inherit elemental-red-face :weight bold)
-     (org-scheduled-today :inherit elemental-green-face :weight bold :slant italic)
+     (org-scheduled :inherit (elemental-green-face bold italic))
+     (org-scheduled-previously :inherit (elemental-red-face bold))
+     (org-scheduled-today :inherit (elemental-green-face bold italic))
      (org-sexp-date :inherit elemental-accent-fg-1-face :underline t)
      (org-someday-kwd-face :inherit elemental-blue-face)
-     (org-special-keyword :inherit elemental-dark-fg-face :slant italic)
+     (org-special-keyword :inherit (elemental-dark-fg-face italic))
      (org-started-kwd-face :inherit elemental-accent-fg-3-face)
      (org-table :inherit elemental-accent-fg-4-face)
-     (org-tag :weight bold)
+     (org-tag :inherit bold)
      (org-target :underline t)
      (org-time-grid :inherit elemental-accent-fg-3-face)
-     (org-todo :inherit elemental-red-face :inverse-video t :weight bold)
-     (org-todo-kwd-face :inherit elemental-red-face :inverse-video t :weight bold)
-     (org-upcoming-deadline :inherit elemental-red-face :weight bold)
+     (org-todo :inherit (elemental-red-face bold) :inverse-video t)
+     (org-todo-kwd-face :inherit (elemental-red-face bold) :inverse-video t)
+     (org-upcoming-deadline :inherit (elemental-red-face bold))
      (org-verbatim :inherit elemental-dark-fg-face :underline t)
      (org-waiting-kwd-face :inherit elemental-orange-face)
-     (org-warning :inherit elemental-red-face :weight bold)
+     (org-warning :inherit (elemental-red-face bold))
 
      ;; outline
      (outline-1 :inherit elemental-blue-face)
@@ -285,16 +285,16 @@ string, etc."
      (outline-8 :inherit elemental-accent-fg-1-face)
 
      ;; show-paren
-     (show-paren-match :inherit elemental-accent-fg-4-face :underline t :weight bold)
-     (show-paren-mismatch :inherit elemental-red-face :inverse-video t :weight bold)
+     (show-paren-match :inherit (elemental-accent-fg-4-face bold) :underline t)
+     (show-paren-mismatch :inherit (elemental-red-face bold) :inverse-video t)
 
      ;; ----- plugins -----
      ;; ace-jump-mode
      (ace-jump-face-background :inherit elemental-dark-fg-face)
-     (ace-jump-face-foreground :inherit elemental-red-face :weight bold)
+     (ace-jump-face-foreground :inherit (elemental-red-face bold))
 
      ;; company-mode
-     (company-tooltip :inherit (elemental-bright-bg-face elemental-bright-fg-face) :weight bold)
+     (company-tooltip :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
      (company-tooltip-common :inherit elemental-accent-fg-3-face)
      (company-tooltip-annotation :inherit elemental-dark-fg-face)
      (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
@@ -309,12 +309,12 @@ string, etc."
 
      ;; cperl-mode
      (cperl-hash-face :weight unspecified :slant italic :underline t)
-     (cperl-array-face :slant italic :underline t)
+     (cperl-array-face :inherit italic :underline t)
      (cperl-nonoverridable-face :inherit font-lock-keyword-face :weight unspecified :slant unspecified :underline nil)
 
      ;; flymake
-     (flymake-errline :inherit elemental-red-face :weight bold)
-     (flymake-warnline :inherit elemental-red-face :weight bold)
+     (flymake-errline :inherit (elemental-red-face bold))
+     (flymake-warnline :inherit (elemental-red-face bold))
 
      ;; flyspell
      (flyspell-duplicate :underline (:color "yellow" :style wave))
@@ -347,7 +347,7 @@ string, etc."
      (markdown-url-face :inherit link)
 
      ;; popup
-     (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face) :weight bold)
+     (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
      (popup-tip-face :inherit (elemental-brighter-bg-face popup-face))
      (popup-summary-face :inherit (elemental-dark-fg-face popup-face) :weight normal)
      (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
@@ -390,9 +390,9 @@ string, etc."
      (whitespace-line :inherit elemental-accent-fg-2-face)
      (whitespace-space :inherit elemental-darker-fg-face)
      (whitespace-space-after-tab :inherit elemental-accent-fg-4-face)
-     (whitespace-space-before-tab :inherit elemental-red-face :weight bold)
+     (whitespace-space-before-tab :inherit (elemental-red-face bold))
      (whitespace-tab :inherit elemental-darker-fg-face)
-     (whitespace-trailing :inherit elemental-red-face :weight bold)
+     (whitespace-trailing :inherit (elemental-red-face bold))
      )))
 
 ;;;###autoload
