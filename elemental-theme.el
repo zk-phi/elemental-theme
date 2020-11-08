@@ -352,7 +352,6 @@ string, etc."
      ;; markdown-mode
      (markdown-bold-face :inherit bold)
      (markdown-header-delimiter-face :inherit elemental-dark-fg-face)
-     (markdown-header-face :inherit elemental-blue-face)
      (markdown-header-face-1 :inherit elemental-blue-face)
      (markdown-header-face-2 :inherit elemental-accent-fg-4-face)
      (markdown-header-face-3 :inherit elemental-accent-fg-3-face)
