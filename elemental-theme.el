@@ -314,14 +314,14 @@ string, etc."
 
      ;; company-mode
      (company-tooltip :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
-     (company-tooltip-common :inherit elemental-accent-fg-3-face)
+     (company-tooltip-common :inherit (elemental-accent-fg-4-face bold underline))
      (company-tooltip-annotation :inherit elemental-dark-fg-face)
      (company-tooltip-selection :inherit elemental-highlight-bg-1-face)
      (company-tooltip-mouse :inherit elemental-accent-fg-4-face)
      (company-tooltip-search :inherit elemental-highlight-bg-2-face)
      (company-tooltip-search-selection :inherit elemental-highlight-bg-2-face)
      (company-preview :inherit elemental-bright-bg-face)
-     (company-preview-common :inherit elemental-accent-fg-3-face)
+     (company-preview-common :inherit (elemental-accent-fg-4-face bold underline))
      (company-preview-search :inherit elemental-highlight-bg-2-face)
      (company-scrollbar-fg :inherit elemental-highlight-bg-1-face)
      (company-scrollbar-bg :inherit elemental-brighter-bg-face)
