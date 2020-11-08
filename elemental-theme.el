@@ -353,7 +353,7 @@ string, etc."
      ;; popup
      (popup-face :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
      (popup-tip-face :inherit (elemental-brighter-bg-face elemental-bright-fg-face bold))
-     (popup-summary-face :inherit (elemental-dark-fg-face elemental-bright-fg-face))
+     (popup-summary-face :inherit (elemental-bright-bg-face elemental-dark-fg-face bold))
      (popup-scroll-bar-foreground-face :inherit elemental-highlight-bg-1-face)
      (popup-scroll-bar-background-face :inherit elemental-brighter-bg-face)
      (popup-isearch-match :inherit (elemental-highlight-bg-2-face elemental-bright-fg-face bold))
