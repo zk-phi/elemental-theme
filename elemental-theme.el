@@ -127,7 +127,7 @@ string, etc."
      (escape-glyph :inherit elemental-orange-face)
      (fringe :inherit elemental-dark-fg-face)
      (line-number :inherit elemental-dark-fg-face)
-     (header-line :inherit elemental-bright-bg-face :inverse-video t)
+     (header-line :inherit (elemental-bright-bg-face elemental-bright-fg-face))
      (highlight :inherit elemental-bright-bg-face)
      (hl-line :inherit elemental-bright-bg-face)
      (menu :inherit elemental-bright-bg-face)
