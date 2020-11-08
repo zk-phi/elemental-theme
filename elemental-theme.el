@@ -208,7 +208,6 @@ string, etc."
 
      ;; font-lock
      (font-lock-builtin-face :inherit elemental-green-face)
-     (font-lock-color-constant-face :inherit elemental-green-face)
      (font-lock-comment-delimiter-face :inherit (elemental-dark-fg-face italic))
      (font-lock-comment-face :inherit (elemental-dark-fg-face italic))
      (font-lock-constant-face :inherit elemental-accent-fg-4-face)
