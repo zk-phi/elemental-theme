@@ -246,8 +246,8 @@ string, etc."
      (org-checkbox :inherit bold)
      (org-clock-overlay :inherit elemental-accent-fg-4-face)
      (org-code :inherit elemental-dark-fg-face)
-     (org-column :inherit elemental-accent-fg-4-face :inverse-video t)
-     (org-column-title :inherit bold :inverse-video t)
+     (org-column :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
+     (org-column-title :inherit (elemental-bright-bg-face elemental-bright-fg-face bold))
      (org-date :inherit (elemental-accent-fg-1-face underline))
      (org-date-selected :inherit elemental-red-face :inverse-video t)
      (org-default :inherit default)
@@ -305,7 +305,7 @@ string, etc."
 
      ;; show-paren
      (show-paren-match :inherit (elemental-accent-fg-4-face bold underline))
-     (show-paren-mismatch :inherit (elemental-red-face bold) :inverse-video t)
+     (show-paren-mismatch :inherit elemental-red-face :inverse-video t)
 
      ;; ----- plugins -----
      ;; ace-jump-mode
