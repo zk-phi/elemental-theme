@@ -383,8 +383,8 @@ string, etc."
      (web-mode-html-attr-name-face :inherit elemental-green-face)
      (web-mode-html-tag-bracket-face :inherit elemental-blue-face)
      (web-mode-html-tag-face :inherit default)
-     (web-mode-json-context-face :inherit font-lock-builtin-face)
-     (web-mode-json-key-face :inherit font-lock-builtin-face)
+     (web-mode-json-context-face :inherit elemental-green-face)
+     (web-mode-json-key-face :inherit elemental-green-face)
 
      ;; whitespace-mode
      (whitespace-empty :inherit elemental-red-face)
