@@ -3,26 +3,19 @@
 An Emacs color theme well organized with the built-in inheritance
 mechanism.
 
-### Easy to customize
+Meant to be ...
 
-  ![Screencast](img/screencast.gif)
+### 1. Easy to customize
 
-### Consistent (i.e. same meaning, same look)
+You choose colors. `elemental-theme` maps the colors to faces.
 
-  ![Consistency](img/consistency.png)
+![Screencast](img/screencast.gif)
 
-## What's this ?
+### 2. Consistent
 
-TL;DR: You choose colors. `elemental-theme` maps the colors to various
-faces in a consistent way.
+Same meaning, same look. Designed to be intuitive.
 
-Color themes have roughly two roles:
-
-1. define a color palette (e.g. "'red' means '#cc4433' in this theme")
-2. map the colors to individual faces (e.g. "errors should look 'red'")
-
-`elemental-theme` is desined to play the role 2 well, in a organized
-way. And the role 1 is left for the users.
+![Consistency](img/consistency.png)
 
 ## Installation
 
@@ -71,7 +64,7 @@ Color-specific faces:
 - `elemental-green-fg-face`
 - `elemental-orange-fg-face`
 
-To customize these elemental faces, , functions like
+To customize these elemental faces, functions like
 `set-face-background`, `set-face-foreground` and `set-face-attribute`
 are useful.
 
