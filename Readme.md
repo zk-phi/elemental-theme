@@ -1,12 +1,13 @@
-# Elemental-theme
+## Elemental-theme
 
-A color theme based on inheritance intended to be
+An Emacs color theme well organized with the built-in inheritance
+mechanism.
 
-1. Easy to customize
+### Easy to customize
 
   ![Screencast](img/screencast.gif)
 
-2. Consistent (i.e. same meaning, same look)
+### Consistent (i.e. same meaning, same look)
 
   ![Consistency](img/consistency.png)
 
