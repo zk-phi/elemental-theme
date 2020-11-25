@@ -1,7 +1,14 @@
 # Elemental-theme
 
-A color theme based on inheritance, intended to be consistent and easy
-to customize.
+A color theme based on inheritance intended to be
+
+1. Easy to customize
+
+  ![Screencast](img/screencast.gif)
+
+2. Consistent (i.e. same meaning, same look)
+
+  ![Consistency](img/consistency.png)
 
 ## What's this ?
 
@@ -15,41 +22,6 @@ Color themes have roughly two roles:
 
 `elemental-theme` is desined to play the role 2 well, in a organized
 way. And the role 1 is left for the users.
-
-### But how ?
-
-`elemental-theme` first defines some special faces (called "elemental"
-faces), and makes all other supported faces be derived from these
-"elemental" faces (powered by the built-in inheritance
-mechanism). This way you can customize the whole theme by just
-modifying several "elemental" faces. Other faces automatically follow
-the changes.
-
-### Related works
-
-- `base16-emacs`
-- `emacs-color-theme-solarized`
-
-They both have ability to generate a color theme from a color palette,
-so that they can act like "color theme framework"s.
-
-`elemental-theme` is, unlike these theme frameworks, just a "color
-theme" which is well organized with the built-in inheritance
-mechanism. So `elemental-theme` can be customized dynamically (without
-need to "re-generate" the theme when you make changes), and works well
-with not just colors but any face attributes like `bold`, `italic`
-etc.
-
-`elemental-theme` also defines some utility faces (called "semantic"
-faces), to provide an abstraction layer of faces. For an example,
-`org-link` and `markdown-link-face` both inherit the same "semantic"
-face `elemental-reference`, which is then derived from some
-"elemental" faces. This kind of abstraction helps to support new
-packages in a consistent way, and keep the theme organized (kinda like
-molecules in "Atomic Design"). Moreover, `elemental-theme` does not
-inhibit users to modify these "semantic" faces, so that you may
-redefine how `reference` should look like, if you want (make it
-italic, instead of underlined, for an example).
 
 ## Installation
 
@@ -165,15 +137,24 @@ the color:
 
 ## Semantic faces
 
+![Architecture](img/architecture.png)
+
+In addition to the "elemental" faces, `elemental-theme` also defines
+some utility faces (called "semantic" faces). For an example,
+`org-link` and `markdown-link-face` both inherit the same "semantic"
+face `elemental-reference`, which is then derived from some
+"elemental" faces (`underline` specifically).
+
+"semantic" faces provides an abstraction layer of faces based on
+semantics (meanings), which helps adding support to new packages in a
+consistent way, and keep the theme organized (kinda like "molecule"s
+in "Atomic Design").
+
+Moreover, `elemental-theme` does not inhibit users to modify these
+"semantic" faces. You may redefine how `reference` should look like,
+if you want (make it italic, instead of underlined, for an example).
+
 Following faces are called "semantic" in this theme.
-
-They all are derived from some other faces (either "elemental" or
-"semantic") and provides an abstraction layer of faces based on
-semantics (meanings). You may customize them too, but you usually
-don't need to.
-
-All other supported faces are derived from these semantic faces (or
-the `default` face).
 
 You may use `M-x describe-face` for more detailed descriptions of each
 faces.
@@ -250,7 +231,7 @@ Please follow the policies below when adding support to new packages.
 ### Consistent
 
 All supported faces (except for the "elemental" and "semantic" faces)
-must be derived from exactly one semantic face (or the `default`
+must be derived from exactly one "semantic" face (or the `default`
 face). We neither put any styles directly to a face, nor make more
 than two inheritances for a single face.
 
@@ -259,7 +240,9 @@ the description of the semantic face (i.e. You CANNOT use
 `elemental-selected` just for its style. You CAN use
 `elemental-selected` face only if it's actually a selected item).
 
-If you find that there's no suitable semantic face, it's okay to add a
+If you find that there's no suitable semantic face for the purpose,
+it's okay to add a semantic face by deriving some "elemental" or
+"semantic" faces. Note that we do not put any styles directly to a
 semantic face.
 
 ### Distinguishable
@@ -268,10 +251,29 @@ semantic face.
 impossible to put unique styles to all the semantic faces. So in
 `elemental-theme`, it's okay to put the same style to more than one
 semantic faces (i.e. it's okay that `elemental-markup-table` and
-`elemental-syntax-literal` look same).
+`elemental-syntax-literal` look the same).
 
-But, if two different semantic faces usually appear in the same buffer
+But, if two different semantic faces (often) appear in the same buffer
 (or the same UI element, like popups), it's not okay to put the same
 style to these faces. For an example, `elemental-markup-code` and
 `elemental-markup-table` are both used to highlight markup files. So
-they should look different (otherwise they are ambiguous).
+they should look different (to avoid ambiguity).
+
+## Related works
+
+- `base16-emacs`
+- `emacs-color-theme-solarized`
+
+They both have ability to generate a color theme from a color palette,
+so that they can act like "color theme framework"s.
+
+`elemental-theme` is, unlike these theme frameworks, just a "color
+theme" which is well organized with the built-in inheritance
+mechanism. So `elemental-theme` can be customized dynamically (without
+need to "re-generate" the theme when you make changes), and works well
+with not just colors but any face attributes like `bold`, `italic`
+etc.
+
+`elemental-theme` also has an abstraction layer called "semantic"
+faces, which enhances extensiblity & customizablity in a consistent
+way.
