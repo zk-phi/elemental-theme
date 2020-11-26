@@ -220,19 +220,19 @@ something is removed. Mostly for diffs."
   :group 'elemental-theme)
 
 (defface elemental-diff-refine-added
-  '((t (:inherit (elemental-diff-added elemental-match))))
+  '((t (:inherit (elemental-diff-added elemental-inverse-video-face))))
   "Added (refine) face for elemental-theme. Used to highlight added
 parts more accurately (than `elemental-diff-added')."
   :group 'elemental-theme)
 
 (defface elemental-diff-refine-changed
-  '((t (:inherit (elemental-diff-changed elemental-match))))
+  '((t (:inherit (elemental-diff-changed elemental-inverse-video-face))))
   "Changed (refine) face for elemental-theme. Used to highlight
 changed parts more accurately (than `elemental-diff-changed')."
   :group 'elemental-theme)
 
 (defface elemental-diff-refine-removed
-  '((t (:inherit (elemental-diff-removed elemental-match))))
+  '((t (:inherit (elemental-diff-removed elemental-inverse-video-face))))
   "Changed (refine) face for elemental-theme. Used to highlight
 removed parts more accurately (than `elemental-diff-removed')."
   :group 'elemental-theme)
