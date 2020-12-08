@@ -663,6 +663,7 @@ messages. Mostly for minibuffers."
      (stripe-hl-line :inherit elemental-selected)
 
      ;; web-mode
+     (web-mode-css-property-name-face :inherit elemental-key)
      (web-mode-doctype-face :inherit elemental-syntax-builtin)
      (web-mode-error-face :inherit elemental-incorrect)
      (web-mode-function-call-face :inherit default)
