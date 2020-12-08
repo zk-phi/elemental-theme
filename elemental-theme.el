@@ -413,7 +413,6 @@ messages. Mostly for minibuffers."
      (line-number :inherit elemental-ui-ghost)
      (header-line :inherit elemental-ui-component)
      (highlight :inherit elemental-highlight)
-     (hl-line :inherit elemental-highlight)
      (menu :inherit elemental-ui-component)
      (minibuffer-prompt :inherit elemental-ui-prompt)
      (mode-line :inherit elemental-ui-component)
@@ -462,20 +461,6 @@ messages. Mostly for minibuffers."
      ;; eldoc
      (eldoc-highlight-function-argument :inherit elemental-match)
 
-     ;; sh-script
-     (sh-heredoc :inherit elemental-syntax-literal)
-     (sh-quoted-exec :inherit elemental-caution)
-
-     ;; ido
-     (ido-first-match :inherit elemental-selected)
-     (ido-only-match :inherit elemental-selected)
-     (ido-subdir :inherit elemental-file-name)
-
-     ;; isearch
-     (isearch :inherit elemental-selected)
-     (isearch-fail :inherit elemental-indicator-error)
-     (lazy-highlight :inherit elemental-match-interactive)
-
      ;; eshell
      (eshell-ls-archive :inherit default)
      (eshell-ls-backup :inherit elemental-diminished)
@@ -509,9 +494,22 @@ messages. Mostly for minibuffers."
      (font-lock-variable-name-face :inherit elemental-syntax-symbol)
      (font-lock-warning-face :inherit elemental-caution)
 
+     ;; hl-line
+     (hl-line :inherit elemental-highlight)
+
+     ;; ido
+     (ido-first-match :inherit elemental-selected)
+     (ido-only-match :inherit elemental-selected)
+     (ido-subdir :inherit elemental-file-name)
+
      ;; info
      (info-xref :inherit elemental-reference)
      (info-xref-visited :inherit elemental-reference)
+
+     ;; isearch
+     (isearch :inherit elemental-selected)
+     (isearch-fail :inherit elemental-indicator-error)
+     (lazy-highlight :inherit elemental-match-interactive)
 
      ;; org
      (org-block :inherit elemental-markup-code)
@@ -551,6 +549,10 @@ messages. Mostly for minibuffers."
      (outline-6 :inherit elemental-level-2)
      (outline-7 :inherit elemental-level-3)
      (outline-8 :inherit elemental-level-4)
+
+     ;; sh-script
+     (sh-heredoc :inherit elemental-syntax-literal)
+     (sh-quoted-exec :inherit elemental-caution)
 
      ;; show-paren
      (show-paren-match :inherit elemental-match)
