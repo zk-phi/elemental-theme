@@ -48,7 +48,6 @@ Brightness variations:
 - `elemental-bright-fg-face`
 - `elemental-dark-fg-face`
 - `elemental-darker-fg-face`
-- `elemental-hidden-fg-face`
 
 Accents:
 
