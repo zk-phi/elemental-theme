@@ -420,6 +420,7 @@ messages. Mostly for minibuffers."
      (region :inherit elemental-selected)
      (secondary-selection :inherit elemental-match-interactive)
      (trailing-whitespace :inherit elemental-inappropreate)
+     (window-divider :inherit elemental-ui-ghost)
      (vertical-border :inherit default)
 
      ;; ----- builtins -----
@@ -690,6 +691,11 @@ messages. Mostly for minibuffers."
 (deftheme elemental-theme "An elemental theme.")
 (apply 'custom-theme-set-faces 'elemental-theme elemental-faces-list)
 (provide-theme 'elemental-theme)
+
+(custom-theme-set-variables
+ 'elemental-theme
+ '(window-divider-default-right-width 1)
+ '(window-divider-default-places 'right-only))
 
 (eval-after-load "rainbow-delimiters"
   (custom-theme-set-variables 'elemental-theme '(rainbow-delimiters-max-face-count 4)))

@@ -26,6 +26,15 @@ Add elemental-theme.el to the load-path, and enable the theme.
 (enable-theme 'elemental-theme)
 ```
 
+### Recommended settings
+
+It's recommended to enable `window-divider-mode`, so that
+elemental-theme can change the color of vertical window divider.
+
+```
+(window-divider-mode 1)
+```
+
 ## Customization
 
 Following faces are called "elemental" in this theme.
