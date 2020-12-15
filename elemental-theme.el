@@ -421,6 +421,8 @@ messages. Mostly for minibuffers."
      (secondary-selection :inherit elemental-match-interactive)
      (trailing-whitespace :inherit elemental-inappropreate)
      (window-divider :inherit elemental-ui-ghost)
+     (window-divider-first-pixel :inherit elemental-ui-ghost)
+     (window-divider-last-pixel :inherit elemental-ui-ghost)
      (vertical-border :inherit default)
 
      ;; ----- builtins -----
@@ -694,7 +696,7 @@ messages. Mostly for minibuffers."
 
 (custom-theme-set-variables
  'elemental-theme
- '(window-divider-default-right-width 1)
+ '(window-divider-default-right-width 2)
  '(window-divider-default-places 'right-only))
 
 (eval-after-load "rainbow-delimiters"
