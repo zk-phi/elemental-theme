@@ -577,6 +577,11 @@ messages. Mostly for minibuffers."
      (company-scrollbar-fg :inherit elemental-selected)
      (company-scrollbar-bg :inherit elemental-ui-component-transparent)
 
+     ;; corfu
+     (corfu-default :inherit elemental-ui-component)
+     (corfu-current :inherit elemental-selected)
+     (corfu-bar :inherit elemental-inverse-video-face)
+
      ;; cperl-mode
      (cperl-hash-face :inherit elemental-syntax-symbol)
      (cperl-array-face :inherit elemental-syntax-symbol)
