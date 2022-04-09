@@ -580,7 +580,7 @@ messages. Mostly for minibuffers."
      ;; corfu
      (corfu-default :inherit elemental-ui-component)
      (corfu-current :inherit elemental-selected)
-     (corfu-bar :inherit elemental-inverse-video-face)
+     (corfu-bar :inherit cursor)
 
      ;; cperl-mode
      (cperl-hash-face :inherit elemental-syntax-symbol)
