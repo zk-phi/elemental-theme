@@ -201,6 +201,12 @@ items etc). This face is NOT used to highlight more than two
 items."
   :group 'elemental-theme)
 
+(defface elemental-annotation
+  '((t (:inherit italic)))
+  "Annotation face for elemental-theme. Used to annotate selectable items,
+  and can be used toghether with `elemental-selected'."
+  :group 'elemental-theme)
+
 (defface elemental-diff-added
   '((t (:inherit elemental-green-fg-face)))
   "Added face for elemental-theme. Used to indicate that
@@ -604,6 +610,64 @@ messages. Mostly for minibuffers."
 
      ;; indent-guide
      (indent-guide-face :inherit elemental-ui-ghost)
+
+     ;; completions
+     (completions-common-part :inherit elemental-match)
+     (completions-annotations :inherit elemental-annotation)
+
+     ;; vertico
+     (vertico-current :inherit elemental-selected :extend t)
+
+     ;; orderless
+     (orderless-match-face-0 :inherit elemental-match)
+     (orderless-match-face-1 :inherit elemental-match)
+     (orderless-match-face-2 :inherit elemental-match)
+     (orderless-match-face-3 :inherit elemental-match)
+
+     ;; marginalia
+     (marginalia-key :inherit elemental-annotation)
+     (marginalia-type :inherit elemental-annotation)
+     (marginalia-char :inherit elemental-annotation)
+     (marginalia-lighter :inherit elemental-annotation)
+     (marginalia-on :inherit elemental-annotation)
+     (marginalia-off :inherit elemental-annotation)
+     (marginalia-documentation :inherit elemental-annotation)
+     (marginalia-value :inherit elemental-annotation)
+     (marginalia-null :inherit elemental-annotation)
+     (marginalia-true :inherit elemental-annotation)
+     (marginalia-function :inherit elemental-annotation)
+     (marginalia-symbol :inherit elemental-annotation)
+     (marginalia-list :inherit elemental-annotation)
+     (marginalia-mode :inherit elemental-annotation)
+     (marginalia-date :inherit elemental-annotation)
+     (marginalia-version :inherit elemental-annotation)
+     (marginalia-archive :inherit elemental-annotation)
+     (marginalia-installed :inherit elemental-annotation)
+     (marginalia-size :inherit elemental-annotation)
+     (marginalia-number :inherit elemental-annotation)
+     (marginalia-string :inherit elemental-annotation)
+     (marginalia-modified :inherit elemental-annotation)
+     (marginalia-file-name :inherit elemental-annotation)
+     (marginalia-file-owner :inherit elemental-annotation)
+     (marginalia-file-priv-no :inherit elemental-annotation)
+     (marginalia-file-priv-dir :inherit elemental-annotation)
+     (marginalia-file-priv-link :inherit elemental-annotation)
+     (marginalia-file-priv-read :inherit elemental-annotation)
+     (marginalia-file-priv-write :inherit elemental-annotation)
+     (marginalia-file-priv-exec :inherit elemental-annotation)
+     (marginalia-file-priv-other :inherit elemental-annotation)
+     (marginalia-file-priv-rare :inherit elemental-annotation)
+
+     ;; consult
+     (consult-help :inherit elemental-annotation)
+     (consult-line-number :inherit elemental-annotation)
+     (consult-grep-context :inherit elemental-annotation)
+     (consult-line-number-prefix :inherit elemental-annotation)
+     (consult-line-number-wrapped :inherit elemental-annotation)
+     (consult-key :inherit nil)
+     (consult-file :inherit nil)
+     (consult-bookmark :inherit nil)
+     (consult-buffer :inherit nil)
 
      ;; ivy
      (ivy-confirm-face :inherit elemental-caution)

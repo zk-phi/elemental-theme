@@ -173,6 +173,7 @@ Basic:
 - `elemental-match-interactive`
 - `elemental-reference`
 - `elemental-selected`
+- `elemental-annotation`
 
 Differences (NOT only for the `diff-mode`™️):
 
