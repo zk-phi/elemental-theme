@@ -580,8 +580,8 @@ messages. Mostly for minibuffers."
      (company-preview :inherit elemental-ui-component)
      (company-preview-common :inherit elemental-match)
      (company-preview-search :inherit elemental-match-interactive)
-     (company-scrollbar-fg :inherit elemental-selected)
-     (company-scrollbar-bg :inherit elemental-ui-component-transparent)
+     (company-tooltip-scrollbar-thumb :inherit elemental-selected)
+     (company-tooltip-scrollbar-track :inherit elemental-ui-component-transparent)
 
      ;; corfu
      (corfu-default :inherit elemental-ui-component)
